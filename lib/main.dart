@@ -17,27 +17,27 @@ class MyApp extends StatelessWidget {
           Text(
             'Hello',
             textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 130.0),
+            style: TextStyle(fontSize: 100.0),
           ),
           Text(
             'World',
             textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 130.0),
+            style: TextStyle(fontSize: 100.0),
           ),
           Text(
             'Flutter',
             textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 30.0),
+            style: TextStyle(fontSize: 100.0),
           ),
           Text(
             'Framework',
             textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 130.0),
+            style: TextStyle(fontSize: 50.0),
           ),
           Text(
             'Framework',
             textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 130.0),
+            style: TextStyle(fontSize: 80.0),
           )
         ],
       ),
