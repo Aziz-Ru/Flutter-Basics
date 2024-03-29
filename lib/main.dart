@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,40 +8,48 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      // padding: EdgeInsets.symmetric(vertical: 100.0),
-      padding: EdgeInsets.all(50.0),
-      decoration: BoxDecoration(color: Colors.blue),
-      child: const Column(
+    return Directionality(
         textDirection: TextDirection.ltr,
-        children: [
-          Text(
-            'Hello',
-            textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 100.0),
-          ),
-          Text(
-            'World',
-            textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 100.0),
-          ),
-          Text(
-            'Flutter',
-            textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 100.0),
-          ),
-          Text(
-            'Framework',
-            textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 50.0),
-          ),
-          Text(
-            'Framework',
-            textDirection: TextDirection.ltr,
-            style: TextStyle(fontSize: 80.0),
-          )
-        ],
-      ),
-    );
+        child: ListView(
+          padding: EdgeInsets.symmetric(s),
+          children: const [
+            Text(
+              '1',
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100.0),
+              
+            ),
+            Text(
+              '2',
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100.0),
+            ),
+            Text(
+              '3',
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100.0),
+            ),
+            Text(
+              '4',
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100.0),
+            ),
+            Text(
+              '5',
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100.0),
+            ),
+            Text(
+              '6',
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100.0),
+            ),
+            Text(
+              '7',
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 100.0),
+            ),
+          ],
+        ));
   }
 }
