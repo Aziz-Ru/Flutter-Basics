@@ -7,20 +7,39 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('CSE'),
+    return const Row(
+      textDirection: TextDirection.ltr,
+      children: [
+        Expanded(
+            //Expanded use krle autoamtic feet hbe
+            child: Text(
+          'Hello',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(fontSize: 30.0),
+        )),
+        Expanded(
+            child: Text(
+          'World',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(fontSize: 30.0),
+        )),
+        Expanded(
+            child: Text(
+          'Flutter',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(fontSize: 30.0),
+        )),
+        Text(
+          'Framework',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(fontSize: 30.0),
         ),
-        body: Card(
-          child: Column(
-            children: <Widget>[
-              Image.asset('assets/pasta.jpg'),
-              const Text('Foods')
-            ],
-          ),
-        ),
-      ),
+        Text(
+          'Framework',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(fontSize: 30.0),
+        )
+      ],
     );
   }
 }
