@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,43 +10,113 @@ class MyApp extends StatelessWidget {
     return Directionality(
         textDirection: TextDirection.ltr,
         child: ListView(
-          padding: EdgeInsets.symmetric(s),
-          children: const [
-            Text(
-              '1',
-              textDirection: TextDirection.ltr,
-              style: TextStyle(fontSize: 100.0),
-              
+          // vertical: 100,
+          // padding: const EdgeInsets.symmetric(horizontal: 100),
+          children: [
+            Container(
+              margin: const EdgeInsets.all(10),
+              height: 100,
+              color: Colors.pink,
+              child: const Center(
+
+                  // padding:EdgeInsets.all(5.0),
+                  child: Text(
+                '1',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(fontSize: 100.0),
+              )),
             ),
-            Text(
-              '2',
-              textDirection: TextDirection.ltr,
-              style: TextStyle(fontSize: 100.0),
+            Container(
+              margin: const EdgeInsets.all(10),
+              height: 100,
+              color: Colors.purple,
+              child: const Center(
+
+                  // padding:EdgeInsets.all(5.0),
+                  child: Text(
+                '2',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(fontSize: 100.0),
+              )),
             ),
-            Text(
-              '3',
-              textDirection: TextDirection.ltr,
-              style: TextStyle(fontSize: 100.0),
+            Container(
+              margin: const EdgeInsets.all(10),
+              height: 100,
+              color: Colors.red,
+              child: const Center(
+
+                  // padding:EdgeInsets.all(5.0),
+                  child: Text(
+                '3',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(fontSize: 100.0),
+              )),
             ),
-            Text(
-              '4',
-              textDirection: TextDirection.ltr,
-              style: TextStyle(fontSize: 100.0),
+            Container(
+              margin: const EdgeInsets.all(10),
+              height: 100,
+              color: Colors.green,
+              child: const Center(
+
+                  // padding:EdgeInsets.all(5.0),
+                  child: Text(
+                '4',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(fontSize: 100.0),
+              )),
             ),
-            Text(
-              '5',
-              textDirection: TextDirection.ltr,
-              style: TextStyle(fontSize: 100.0),
+            Container(
+              margin: const EdgeInsets.all(10),
+              height: 100,
+              color: Colors.redAccent,
+              child: const Center(
+
+                  // padding:EdgeInsets.all(5.0),
+                  child: Text(
+                '5',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(fontSize: 100.0),
+              )),
             ),
-            Text(
-              '6',
-              textDirection: TextDirection.ltr,
-              style: TextStyle(fontSize: 100.0),
+            Container(
+              margin: const EdgeInsets.all(10),
+              height: 100,
+              color: const Color.fromARGB(255, 210, 149, 36),
+              child: const Center(
+
+                  // padding:EdgeInsets.all(5.0),
+                  child: Text(
+                '6',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(fontSize: 100.0),
+              )),
             ),
-            Text(
-              '7',
-              textDirection: TextDirection.ltr,
-              style: TextStyle(fontSize: 100.0),
+            Container(
+              margin: const EdgeInsets.all(10),
+              height: 100,
+              color: Colors.blue,
+              child: const Center(
+
+                  // padding:EdgeInsets.all(5.0),
+                  child: Text(
+                '7',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(fontSize: 100.0),
+              )),
+            ),
+            Container(
+              // padding: const EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
+              height: 100,
+              color: Colors.yellow,
+              child: const Center(
+
+                  // padding:EdgeInsets.all(5.0),
+                  child: Text(
+                '8',
+                textDirection: TextDirection.ltr,
+                style: TextStyle(fontSize: 100.0),
+              )),
             ),
           ],
         ));
