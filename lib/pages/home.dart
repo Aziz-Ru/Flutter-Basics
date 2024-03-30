@@ -8,29 +8,37 @@ class Homepage extends StatefulWidget {
 }
 
 class _MyHomepagestate extends State<Homepage> {
-  String name = "";
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        children: [
-          TextField(
-            onChanged: (value) => {
-              setState(() {
-                name = value;
-              })
-            },
-            // onSubmitted: (value) {
-            //   setState(() {
-            //     name = value;
-            //   });
-          ),
-          Text(
-            name,
-            textDirection: TextDirection.ltr,
-            style: const TextStyle(fontSize: 30.0),
-          )
-        ],
+    return Form(
+      key: _formKey,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 40),
+        child: ListView(
+          children: [
+            TextFormField(
+              decoration: const InputDecoration(
+                  labelText: 'Name:', labelStyle: TextStyle(fontSize: 20)),
+              // ignore: body_might_complete_normally_nullable
+              validator: (value) {
+                if (value!.isEmpty) {
+                  return 'Please Enter Name';
+                }
+              },
+            ),
+            TextFormField(
+              decoration: const InputDecoration(
+                  labelText: 'Email:', labelStyle: TextStyle(fontSize: 20)),
+              // validator: (value) =>
+              // },
+            ),
+            ElevatedButton(
+              onPressed: () {}, 
+              
+              child: const Text("Submit"))
+          ],
+        ),
       ),
     );
   }
