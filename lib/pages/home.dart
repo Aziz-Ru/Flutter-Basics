@@ -1,20 +1,37 @@
 import 'package:flutter/material.dart';
 
-class Homepage extends StatelessWidget {
+class Homepage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _MyHomepagestate();
+  }
+}
+
+class _MyHomepagestate extends State<Homepage> {
+  String name = "";
   @override
   Widget build(BuildContext context) {
-    // int a = addNumber(10, 20);
-    // TODO: implement build
     return Center(
-      child: Text(
-        'Number is ${addNumber(10, 20)}',
-        textDirection: TextDirection.ltr,
-        style: const TextStyle(fontSize: 20.0),
+      child: Column(
+        children: [
+          TextField(
+            onChanged: (value) => {
+              setState(() {
+                name = value;
+              })
+            },
+            // onSubmitted: (value) {
+            //   setState(() {
+            //     name = value;
+            //   });
+          ),
+          Text(
+            name,
+            textDirection: TextDirection.ltr,
+            style: const TextStyle(fontSize: 30.0),
+          )
+        ],
       ),
     );
-  }
-
-  int addNumber(a, b) {
-    return a + b;
   }
 }
