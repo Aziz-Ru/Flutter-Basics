@@ -3,33 +3,18 @@ import 'package:flutter/material.dart';
 class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // int a = addNumber(10, 20);
     // TODO: implement build
-    return Column(
-      children: [
-        TextButton(
-            onPressed: () {
-              // print('Clicked Me');
-            },
-            style: TextButton.styleFrom(
-                backgroundColor: Colors.black,
-                textStyle:
-                    const TextStyle(color: Colors.white, fontSize: 18.0)),
-            child: const Text('Click Me')),
-        ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.purple,
-            ),
-            child: const Text(
-              'Button',
-              style: TextStyle(color: Colors.black),
-            )),
-        FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Colors.pink,
-          child: const Text('Action'),
-        )
-      ],
+    return Center(
+      child: Text(
+        'Number is ${addNumber(10, 20)}',
+        textDirection: TextDirection.ltr,
+        style: const TextStyle(fontSize: 20.0),
+      ),
     );
+  }
+
+  int addNumber(a, b) {
+    return a + b;
   }
 }
