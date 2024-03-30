@@ -13,11 +13,9 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.cyanAccent,
           title: const Text('CSE'),
         ),
-        body: GridView.extent(
-          maxCrossAxisExtent: 200,
-          mainAxisSpacing: 100,
-          crossAxisSpacing: 100,
-          children: const [
+        body: const Stack(
+          children: [
+            //Overfollow hosse
             Image(image: AssetImage('images/bag-1.png')),
             Image(image: AssetImage('images/bag-2.png')),
             Image(image: AssetImage('images/bag-3.png')),
