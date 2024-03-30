@@ -13,28 +13,24 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.cyanAccent,
             title: const Text('CSE'),
           ),
-          body: ListView(
+          body: Center(
+              child: ListView(
+            padding: const EdgeInsets.all(30),
             children: [
-              ListTile(
-                leading: Image.asset('images/bag-1.png'),
-                title: const Text('Red Bag'),
-                subtitle: const Text('This subtitle'),
-                trailing: const Icon(Icons.delete),
+              Card(
+                color: Colors.cyan,
+                child: Image.asset('images/bag-1.png'),
               ),
-              ListTile(
-                leading: Image.asset('images/bag-2.png'),
-                title: const Text('Blue Bag'),
-                subtitle: const Text('This subtitle'),
-                trailing: const Icon(Icons.delete),
+              Card(
+                color: Colors.redAccent,
+                child: Image.asset('images/bag-3.png'),
               ),
-              ListTile(
-                leading: Image.asset('images/bag-3.png'),
-                title: const Text('Black Bag'),
-                subtitle: const Text('This subtitle'),
-                trailing: const Icon(Icons.delete),
-              ),
+              Card(
+                color: Colors.cyanAccent,
+                child: Image.asset('images/bag-2.png'),
+              )
             ],
-          )),
+          ))),
     );
   }
 }
