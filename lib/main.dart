@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfirst/Listview/listViewBuilder.dart';
+import 'package:flutterfirst/Listview/listviewSeperated.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           secondaryHeaderColor: Colors.greenAccent,
           fontFamily: 'Roboto'),
 
-      home: const MyListViewBuilder(),
+      home: const MyListViewSeparated(),
     );
   }
 }
