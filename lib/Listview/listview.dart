@@ -17,7 +17,136 @@ class _Homepage extends State<MyListView> {
       ),
       body: ListView(
         children: [
-          
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '1',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '2',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '3',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '4',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '5',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '6',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '7',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '8',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '9',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                '10',
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+          ),
+          const Divider(
+            height: 2.0,
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
