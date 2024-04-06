@@ -23,11 +23,13 @@ class _Homepage extends State<MyListViewBuilder> {
                     height: 5.0,
                   ),
                   ListTile(
+                    // selectedTileColor: Colors.black,
                     leading: CircleAvatar(
                       child: Text('U $index'),
                     ),
                     title: Text('Username $index'),
                     subtitle: const Text('This is Last Message'),
+                    trailing: const Text('6/4/23'),
                   ),
                 ],
               )),

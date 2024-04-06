@@ -46,3 +46,32 @@ const Scaffold({
 })
 
 ```
+
+## ListTile Widget
+
+ListTile widget is used to populate a ListView in Flutter. It contains title as well as leading or trailing icons. Let’s understand this with the help of an example.
+
+## Constructor of ListTile class
+
+ListTile({Key key,
+Widget leading,
+Widget title,
+Widget subtitle,
+Widget trailing,
+
+bool isThreeLine: false,
+bool dense,
+VisualDensity visualDensity,
+ShapeBorder shape,
+EdgeInsetsGeometry contentPadding,
+
+bool enabled: true,
+GestureTapCallback onTap,
+GestureLongPressCallback onLongPress,
+MouseCursor mouseCursor,
+
+bool selected: false,
+Color focusColor,
+Color hoverColor,
+FocusNode focusNode,
+bool autofocus: false})

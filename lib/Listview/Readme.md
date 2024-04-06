@@ -72,4 +72,4 @@ Clip clipBehavior: Clip.hardEdge}
 
 The ListView.separated() constructor is used to generate a list of widgets, but in addition, a separator widget can also be generated to separate the widgets. In short, these are two intertwined list of widgets: the main list and the separator list. Unlike the builder() constructor, the itemCount parameter is compulsory here.
 
-
+##
