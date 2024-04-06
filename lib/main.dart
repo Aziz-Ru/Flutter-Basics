@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfirst/NestedScrollView/nest.dart';
+import 'package:flutterfirst/PageView/pageview.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,8 +21,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.green,
           secondaryHeaderColor: Colors.greenAccent,
           fontFamily: 'Roboto'),
-
-      home: const MyNestedScrollView(),
+      home: const MyPageView(),
     );
   }
 }
