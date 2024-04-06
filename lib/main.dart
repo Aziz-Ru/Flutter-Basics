@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfirst/PageView/pageview.dart';
+import 'package:flutterfirst/Gridview/builder.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.green,
           secondaryHeaderColor: Colors.greenAccent,
           fontFamily: 'Roboto'),
-      home: const MyPageView(),
+      home: const MyGridView(),
     );
   }
 }
