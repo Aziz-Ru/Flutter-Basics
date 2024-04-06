@@ -18,10 +18,10 @@ class _Homepage extends State<MyNestedScrollView> {
             expandedHeight: 100.0,
             floating: false,
             pinned: true,
-            backgroundColor: Colors.cyan,
+            backgroundColor: Colors.green[800],
             flexibleSpace: FlexibleSpaceBar(
               title: const Text(
-                "Nested Scroll View Example",
+                "Nested Scroll View",
                 style: TextStyle(fontSize: 16),
               ),
               background: Image.network(
