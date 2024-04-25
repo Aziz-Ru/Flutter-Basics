@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfirst/Gridview/builder.dart';
+import 'package:flutterfirst/Tabbar/tabbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.green,
           secondaryHeaderColor: Colors.greenAccent,
           fontFamily: 'Roboto'),
-      home: const MyGridView(),
+      home: const MyTabbar(),
     );
   }
 }
