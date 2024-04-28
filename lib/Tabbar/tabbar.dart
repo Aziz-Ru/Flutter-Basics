@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'dart:ui';
+import 'package:flutterfirst/Tabbar/Pages/callpage.dart';
+import 'package:flutterfirst/Tabbar/Pages/chatpage.dart';
+import 'package:flutterfirst/Tabbar/Pages/profile.dart';
+import 'package:flutterfirst/Tabbar/Pages/updatepage.dart';
+
 
 class MyTabbar extends StatefulWidget {
   const MyTabbar({super.key});
@@ -11,18 +15,19 @@ class MyTabbar extends StatefulWidget {
 class _Homepage extends State<MyTabbar> with SingleTickerProviderStateMixin {
   final List<Tab> topTabs = <Tab>[
     const Tab(
-      child: Icon(Icons.home),
+      icon: Icon(Icons.message),
     ),
     const Tab(
-      child: Icon(Icons.account_balance),
+      icon: Icon(Icons.call),
     ),
     const Tab(
-      child: Icon(Icons.call),
+      icon: Icon(Icons.update),
     ),
     const Tab(
-      child: Icon(Icons.home),
+      icon: Icon(Icons.person),
     ),
   ];
+
   late TabController _tabController;
   @override
   void initState() {
@@ -37,15 +42,19 @@ class _Homepage extends State<MyTabbar> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Tab Bar Demo"),
-        backgroundColor: Theme.of(context).primaryColor,
+        backgroundColor: Colors.green,
+        title: const Text('Whatsapp-Clone'),
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
+        ],
         bottom: TabBar(
           tabs: topTabs,
           controller: _tabController,
         ),
       ),
-      body: const Center(
-        child: Text('Hello Tab bar '),
+      body: TabBarView(
+        controller: _tabController,
+        children: const [Chatpage(), Callpage(), UpdatePage(), Profilepage()],
       ),
     );
   }

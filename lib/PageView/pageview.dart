@@ -11,7 +11,7 @@ class _Homepage extends State<MyPageView> {
   PageController controller = PageController();
   int _curr = 0;
   List<Widget> pages = <Widget>[
-    Center(
+    const Center(
       child: Text('This is intial page'),
     ),
   ];

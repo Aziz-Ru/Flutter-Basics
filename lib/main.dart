@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.green,
           secondaryHeaderColor: Colors.greenAccent,
           fontFamily: 'Roboto'),
+      debugShowCheckedModeBanner: false,
       home: const MyTabbar(),
     );
   }
