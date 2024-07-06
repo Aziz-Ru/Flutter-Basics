@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterfirst/widget/Extended/extended.dart';
 import 'package:flutterfirst/widget/Wrap/wrapwidget.dart';
 import 'package:flutterfirst/widget/animateContainer/animated.dart';
+import 'package:flutterfirst/widget/transition/transition.dart';
 
 class MyColumnWidget extends StatefulWidget {
   final double animateWidth, animateHeight;
@@ -35,7 +36,8 @@ class _MyColumnWidgetState extends State<MyColumnWidget> {
             height: widget.animateHeight,
             color: widget.animateColor,
             borderRadius: widget.animateBorderRadius,
-          )
+          ),
+          const TransitionWidget()
         ],
       ),
     );
