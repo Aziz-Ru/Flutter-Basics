@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfirst/widget/Extended/extended.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,19 +9,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter",
-      home: Scaffold(
-          backgroundColor: Colors.brown,
-          appBar: AppBar(
-            backgroundColor: Colors.redAccent,
-            title: const Text(
-              'First Mobile Application',
-              textDirection: TextDirection.ltr,
+        title: "Flutter",
+        home: Scaffold(
+            appBar: AppBar(
+              backgroundColor: Colors.redAccent,
+              title: const Text(
+                'First Mobile Application',
+                textDirection: TextDirection.ltr,
+              ),
             ),
-          ),
-          body: const Center(
-            child: Text('Hello World'),
-          )),
-    );
+            body: const SafeArea(
+              child: ExtendedWidget(),
+            )));
   }
 }
