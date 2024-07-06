@@ -1,58 +1,57 @@
 import 'package:flutter/material.dart';
 
-class MyExtendedWidget extends StatelessWidget {
-  const MyExtendedWidget({super.key});
+class MyWrapWidget extends StatelessWidget {
+  const MyWrapWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      // crossAxisAlignment: CrossAxisAlignment.center,
+    return Wrap(
+      direction: Axis.horizontal,
+      alignment: WrapAlignment.start,
+      spacing: 10,
+      runSpacing: 10,
+      verticalDirection: VerticalDirection.down,
       children: [
-        Expanded(
-            child: Container(
+        Container(
           width: 100,
           height: 100,
           color: Colors.blue,
           child: const Center(
             child: Text('Container 1'),
           ),
-        )),
-        Expanded(
-            child: Container(
+        ),
+        Container(
           width: 100,
           height: 100,
           color: Colors.blue,
           child: const Center(
             child: Text('Container 2'),
           ),
-        )),
-        Expanded(
-            child: Container(
+        ),
+        Container(
           width: 100,
           height: 100,
           color: Colors.blue,
           child: const Center(
             child: Text('Container 3'),
           ),
-        )),
-        Expanded(
-            child: Container(
+        ),
+        Container(
           width: 100,
           height: 100,
           color: Colors.blue,
           child: const Center(
             child: Text('Container 4'),
           ),
-        )),
-        Expanded(
-            child: Container(
+        ),
+        Container(
           width: 100,
           height: 100,
           color: Colors.blue,
           child: const Center(
             child: Text('Container 5'),
           ),
-        ))
+        )
       ],
     );
   }

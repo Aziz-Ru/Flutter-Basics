@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfirst/widget/Extended/extended.dart';
+import 'package:flutterfirst/widget/Column/columnwidget.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             body: const SafeArea(
-              child: ExtendedWidget(),
+              child: MyColumnWidget(),
             )));
   }
 }
