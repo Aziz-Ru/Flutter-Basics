@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutterfirst/widget/CLiprRect/cliprrect.dart';
 import 'package:flutterfirst/widget/Extended/extended.dart';
+import 'package:flutterfirst/widget/Table/table.dart';
 import 'package:flutterfirst/widget/Wrap/wrapwidget.dart';
 import 'package:flutterfirst/widget/animateContainer/animated.dart';
 import 'package:flutterfirst/widget/transition/transition.dart';
@@ -37,7 +39,9 @@ class _MyColumnWidgetState extends State<MyColumnWidget> {
             color: widget.animateColor,
             borderRadius: widget.animateBorderRadius,
           ),
-          const TransitionWidget()
+          const TransitionWidget(),
+          const MyTable(),
+          const MyClipRRectWidget()
         ],
       ),
     );

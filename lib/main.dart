@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutterfirst/widget/Column/columnwidget.dart';
-import 'package:flutterfirst/widget/PageView/pageview.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +10,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: "Flutter", home: MyPageView());
+    return const MaterialApp(title: "Flutter", home: MyHomePage());
   }
 }
 
