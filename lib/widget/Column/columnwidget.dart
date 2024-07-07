@@ -1,3 +1,4 @@
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfirst/widget/CLiprRect/cliprrect.dart';
 import 'package:flutterfirst/widget/Extended/extended.dart';
@@ -26,6 +27,7 @@ class MyColumnWidget extends StatefulWidget {
 class _MyColumnWidgetState extends State<MyColumnWidget> {
   @override
   Widget build(BuildContext context) {
+    // _getDeviceInfo();
     // print(widget.animateHeight);
     return SingleChildScrollView(
       scrollDirection: Axis.vertical,
@@ -58,6 +60,13 @@ class _MyColumnWidgetState extends State<MyColumnWidget> {
         ],
       ),
     );
+  }
+
+  Future<AndroidDeviceInfo> _getDeviceInfo() async {
+    DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
+    AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
+    print('Running on ${androidInfo}');
+    return androidInfo;
   }
 }
 
