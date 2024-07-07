@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutterfirst/widget/Column/columnwidget.dart';
+import 'package:flutterfirst/widget/shared_prefrene/shared_prefrenc.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +11,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: "Flutter", home: MyHomePage());
+    return const MaterialApp(title: "Flutter", home: SharedPreferencesDemo());
   }
 }
 
