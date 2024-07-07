@@ -1,3 +1,4 @@
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfirst/widget/CLiprRect/cliprrect.dart';
@@ -27,6 +28,7 @@ class MyColumnWidget extends StatefulWidget {
 class _MyColumnWidgetState extends State<MyColumnWidget> {
   @override
   Widget build(BuildContext context) {
+    _getDeviceConnectivity();
     // _getDeviceInfo();
     // print(widget.animateHeight);
     return SingleChildScrollView(
@@ -67,6 +69,12 @@ class _MyColumnWidgetState extends State<MyColumnWidget> {
     AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
     print('Running on ${androidInfo}');
     return androidInfo;
+  }
+
+  Future<ConnectivityResult> _getDeviceConnectivity() async {
+    List<ConnectivityResult> res = await Connectivity().checkConnectivity();
+
+    return res[0];
   }
 }
 
