@@ -31,35 +31,40 @@ class _MyColumnWidgetState extends State<MyColumnWidget> {
     _getDeviceConnectivity();
     // _getDeviceInfo();
     // print(widget.animateHeight);
-    return SingleChildScrollView(
-      scrollDirection: Axis.vertical,
-      child: Column(
-        // mainAxisAlignment: MainAxisAlignment.center,
-        // crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const MyExtendedWidget(),
-          const MyWrapWidget(),
-          MyAnimatedCOntainerDart(
-            width: widget.animateWidth,
-            height: widget.animateHeight,
-            color: widget.animateColor,
-            borderRadius: widget.animateBorderRadius,
-          ),
-          const TransitionWidget(),
-          const MyTable(),
-          const MyClipRRectWidget(),
-          const Row(
-            children: [
-              MyToolTipWidget(msg: 'Add Icon', icon: Icons.add),
-              MyToolTipWidget(msg: 'Refesh Icon', icon: Icons.refresh)
-            ],
-          ),
-          const SizedBox(
-            height: 20,
-            child: Text('Long Press to see the tooltip'),
-          ),
-          const MyAlignWidget()
-        ],
+    return RefreshIndicator(
+      onRefresh: () {
+        return Future.delayed(const Duration(seconds: 2));
+      },
+      child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          // crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const MyExtendedWidget(),
+            const MyWrapWidget(),
+            MyAnimatedCOntainerDart(
+              width: widget.animateWidth,
+              height: widget.animateHeight,
+              color: widget.animateColor,
+              borderRadius: widget.animateBorderRadius,
+            ),
+            const TransitionWidget(),
+            const MyTable(),
+            const MyClipRRectWidget(),
+            const Row(
+              children: [
+                MyToolTipWidget(msg: 'Add Icon', icon: Icons.add),
+                MyToolTipWidget(msg: 'Refesh Icon', icon: Icons.refresh)
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+              child: Text('Long Press to see the tooltip'),
+            ),
+            const MyAlignWidget()
+          ],
+        ),
       ),
     );
   }
