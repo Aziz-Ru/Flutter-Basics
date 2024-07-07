@@ -8,6 +8,7 @@ import 'package:flutterfirst/widget/Wrap/wrapwidget.dart';
 import 'package:flutterfirst/widget/align/align.dart';
 import 'package:flutterfirst/widget/animateContainer/animated.dart';
 import 'package:flutterfirst/widget/dropdownbutton/dropdownbutton.dart';
+import 'package:flutterfirst/widget/scaffholdMessenger/scafholdMessenger.dart';
 import 'package:flutterfirst/widget/tooltip/tooltip.dart';
 import 'package:flutterfirst/widget/transition/transition.dart';
 
@@ -65,6 +66,7 @@ class _MyColumnWidgetState extends State<MyColumnWidget> {
             ),
             const MyAlignWidget(),
             const MyDropDownButton(),
+            const MyScaffholdMessenger(),
           ],
         ),
       ),
