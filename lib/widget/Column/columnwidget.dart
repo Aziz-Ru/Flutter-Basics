@@ -3,6 +3,7 @@ import 'package:flutterfirst/widget/CLiprRect/cliprrect.dart';
 import 'package:flutterfirst/widget/Extended/extended.dart';
 import 'package:flutterfirst/widget/Table/table.dart';
 import 'package:flutterfirst/widget/Wrap/wrapwidget.dart';
+import 'package:flutterfirst/widget/align/align.dart';
 import 'package:flutterfirst/widget/animateContainer/animated.dart';
 import 'package:flutterfirst/widget/tooltip/tooltip.dart';
 import 'package:flutterfirst/widget/transition/transition.dart';
@@ -52,7 +53,8 @@ class _MyColumnWidgetState extends State<MyColumnWidget> {
           const SizedBox(
             height: 20,
             child: Text('Long Press to see the tooltip'),
-          )
+          ),
+          const MyAlignWidget()
         ],
       ),
     );
