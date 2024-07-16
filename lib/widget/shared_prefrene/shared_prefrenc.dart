@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -11,8 +9,16 @@ class SharedPreferencesDemo extends StatefulWidget {
 }
 
 class SharedPreferencesDemoState extends State<SharedPreferencesDemo> {
-  final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
-  late Future<int> _counter;
+  SharedPreferences? _pref;
+  @override
+  void initState() {
+    SharedPreferences.getInstance().then((value) {
+      setState(() {
+        _pref = value;
+      });
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
